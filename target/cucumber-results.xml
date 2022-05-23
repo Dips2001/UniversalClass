@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="30.675">
+    <testcase classname="Verification of My Classes Functionality" name="To validate that redirection occurs to the Sign In page if the customer is not registered" time="8.512">
+        <system-out><![CDATA[Given UniversalClass website is ready.......................................passed
+When I launch URL in chrome browser.........................................passed
+Then Home page of UniversalClasses website should open......................passed
+And I should see My Classes button..........................................passed
+When I click on My Classes button...........................................passed
+Then Sign In page should be displayed.......................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Verification of My Classes Functionality" name="To validate that the joined courses is displayed if the customer is a member of the Universal Class" time="21.839">
+        <system-out><![CDATA[Given UniversalClass website is ready.......................................passed
+When I launch URL in chrome browser.........................................passed
+Then Home page of UniversalClasses website should open......................passed
+When I click on the Hamburger icon..........................................passed
+Then Sign In option should be visible.......................................passed
+When I click on the Sign In option..........................................passed
+Then Sign In page should be displayed.......................................passed
+When I enter valid email as <"dipanwita.jash@gmail.com"> in Sign In page....passed
+And I enter valid password as <"Dipa1234$"> in Sign In page.................passed
+And I click on Sign In button...............................................passed
+Then I wait.................................................................passed
+When I click on the Sign In option..........................................passed
+When I enter valid email as <"dipanwita.jash@gmail.com"> in Sign In page....passed
+And I enter valid password as <"Dipa1234$"> in Sign In page.................passed
+And I click on Sign In button...............................................passed
+Then I get logged in to our respective profiles.............................passed
+And joined courses should be displayed......................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

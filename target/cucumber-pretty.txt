@@ -1,0 +1,29 @@
+
+@MyClasses @Functional @Unregistered
+Scenario: To validate that redirection occurs to the Sign In page if the customer is not registered # Features/MyClasses.feature:27
+  Given UniversalClass website is ready                                                             # com.stepDefinition.UniversalClassTest.universal_class_website_is_ready()
+  When I launch URL in chrome browser                                                               # com.stepDefinition.UniversalClassTest.i_launch_url_in_chrome_browser()
+  Then Home page of UniversalClasses website should open                                            # com.stepDefinition.UniversalClassTest.home_page_of_universal_classes_website_should_open()
+  And I should see My Classes button                                                                # com.stepDefinition.UniversalClassTest.i_should_see_my_classes_button()
+  When I click on My Classes button                                                                 # com.stepDefinition.UniversalClassTest.i_click_on_my_classes_button()
+  Then Sign In page should be displayed                                                             # com.stepDefinition.UniversalClassTest.sign_in_page_should_be_displayed()
+
+@MyClasses @Functional @Registered
+Scenario: To validate that the joined courses is displayed if the customer is a member of the Universal Class # Features/MyClasses.feature:36
+  Given UniversalClass website is ready                                                                       # com.stepDefinition.UniversalClassTest.universal_class_website_is_ready()
+  When I launch URL in chrome browser                                                                         # com.stepDefinition.UniversalClassTest.i_launch_url_in_chrome_browser()
+  Then Home page of UniversalClasses website should open                                                      # com.stepDefinition.UniversalClassTest.home_page_of_universal_classes_website_should_open()
+  When I click on the Hamburger icon                                                                          # com.stepDefinition.UniversalClassTest.i_click_on_the_hamburger_icon()
+  Then Sign In option should be visible                                                                       # com.stepDefinition.UniversalClassTest.sign_in_option_should_be_visible()
+  When I click on the Sign In option                                                                          # com.stepDefinition.UniversalClassTest.i_click_on_the_sign_in_option()
+  Then Sign In page should be displayed                                                                       # com.stepDefinition.UniversalClassTest.sign_in_page_should_be_displayed()
+  When I enter valid email as <"dipanwita.jash@gmail.com"> in Sign In page                                    # com.stepDefinition.UniversalClassTest.i_enter_valid_email_as_in_sign_in_page(java.lang.String)
+  And I enter valid password as <"Dipa1234$"> in Sign In page                                                 # com.stepDefinition.UniversalClassTest.i_enter_valid_password_as_in_sign_in_page(java.lang.String)
+  And I click on Sign In button                                                                               # com.stepDefinition.UniversalClassTest.i_click_on_sign_in_button()
+  Then I wait                                                                                                 # com.stepDefinition.UniversalClassTest.i_wait()
+  When I click on the Sign In option                                                                          # com.stepDefinition.UniversalClassTest.i_click_on_the_sign_in_option()
+  When I enter valid email as <"dipanwita.jash@gmail.com"> in Sign In page                                    # com.stepDefinition.UniversalClassTest.i_enter_valid_email_as_in_sign_in_page(java.lang.String)
+  And I enter valid password as <"Dipa1234$"> in Sign In page                                                 # com.stepDefinition.UniversalClassTest.i_enter_valid_password_as_in_sign_in_page(java.lang.String)
+  And I click on Sign In button                                                                               # com.stepDefinition.UniversalClassTest.i_click_on_sign_in_button()
+  Then I get logged in to our respective profiles                                                             # com.stepDefinition.UniversalClassTest.i_get_logged_in_to_our_respective_profiles()
+  And joined courses should be displayed                                                                      # com.stepDefinition.UniversalClassTest.joined_courses_should_be_displayed()

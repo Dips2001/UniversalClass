@@ -1,0 +1,149 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>14/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 23 01:19:48 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>234 seconds (234223 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate by providing invalid and null values for email and password in the Sign In page", "Optional[Verification of Forgot Password Functionality]"</td>
+<td></td>
+<td>22</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that results related to searched course are given when search criteria matches with any available courses", "Optional[Verification of Course Catalog Functionality]"</td>
+<td></td>
+<td>8</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that the redirection to Forgot Password page with proper fields occurs after clicking on Forgot your password link", "Optional[Verification of Forgot Password Functionality]"</td>
+<td></td>
+<td>23</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate by providing invalid and null values for email and password in the Sign In page", "Optional[Verification of Sign In Functionality]"</td>
+<td></td>
+<td>25</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that redirection occurs to the Sign In page if the customer is not registered", "Optional[Verification of My Classes Functionality]"</td>
+<td></td>
+<td>7</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that the joined courses is displayed if the customer is a member of the Universal Class", "Optional[Verification of My Classes Functionality]"</td>
+<td></td>
+<td>20</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate by providing invalid and null values for email and password in the Sign In page", "Optional[Verification of Sign In Functionality]"</td>
+<td></td>
+<td>28</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate by providing invalid and null values for email and password in the Sign In page", "Optional[Verification of Forgot Password Functionality]"</td>
+<td></td>
+<td>22</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate by providing valid values for email and password in the Sign In page", "Optional[Verification of Forgot Password Functionality]"</td>
+<td></td>
+<td>22</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that the redirection to Sign In page with proper fields occurs after clicking on Sign In option", "Optional[Verification of Sign In Functionality]"</td>
+<td></td>
+<td>7</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that suggestions are given if search string does not match any records or search string is empty and search icon is clicked", "Optional[Verification of Search Courses Functionality]"</td>
+<td></td>
+<td>7</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that results related to searched course are given when search criteria matches with any available courses", "Optional[Verification of Search Courses Functionality]"</td>
+<td></td>
+<td>7</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate that suggestions are given if search string does not match any records or search string is empty and search icon is clicked", "Optional[Verification of Search Courses Functionality]"</td>
+<td></td>
+<td>7</td>
+<td>com.runner.Runner@20140db9</td></tr>
+<tr>
+<td title='com.runner.Runner.Scenario()'><b>Scenario</b><br>Test class: com.runner.Runner<br>Test method: Runs Cucumber Feature<br>Parameters: "To validate by providing valid values for email and password in the Sign In page", "Optional[Verification of Sign In Functionality]"</td>
+<td></td>
+<td>21</td>
+<td>com.runner.Runner@20140db9</td></tr>
+</table><p>
+</body>
+</html>
