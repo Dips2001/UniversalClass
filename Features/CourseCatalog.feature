@@ -23,7 +23,7 @@ Feature: Verification of Course Catalog Functionality
   Appearances and Functionalities of various parts of Course Catalog section are tested
 
   @Functional
-  Scenario: To validate that results related to searched course are given when search criteria matches with any available courses
+  Scenario: To validate that all the available Universal Class courses are displayed after clicking on 'Course Catalog' button
     Given UniversalClass website is ready
     When I launch URL in chrome browser
     Then Home page of UniversalClasses website should open
