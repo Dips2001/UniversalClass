@@ -45,7 +45,7 @@ Feature: Verification of Forgot Password Functionality
     
     
   @Functional @Valid
-  Scenario: To validate by providing valid values for email and password in the Sign In page
+  Scenario: To validate by providing valid values for email and password in the Forgot Password page
     Given UniversalClass website is ready
     When I launch URL in chrome browser
     Then Home page of UniversalClasses website should open
@@ -92,7 +92,7 @@ Feature: Verification of Forgot Password Functionality
     Then I get an error message stating that email was not found
     
   @Functional @Null
-  Scenario: To validate by providing invalid and null values for email and password in the Sign In page
+  Scenario: To validate by providing invalid and null values for email and password in the Forgot Password page
     Given UniversalClass website is ready
     When I launch URL in chrome browser
     Then Home page of UniversalClasses website should open
