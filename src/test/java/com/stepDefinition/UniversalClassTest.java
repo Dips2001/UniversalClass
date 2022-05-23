@@ -116,7 +116,7 @@ public class UniversalClassTest {
 	
 	@Then("I wait")
 	public void i_wait() {
-		WebDriverWait wait = new WebDriverWait(driver,50);
+		WebDriverWait wait = new WebDriverWait(driver,80);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(prop.getProperty("cc_button"))));
 	}
 
